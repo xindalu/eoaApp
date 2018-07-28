@@ -1,0 +1,43 @@
+<div class="login-body">
+  <div class="login-container">
+    <div class="logo">
+      <img width="160px" src="../../../assets/cscec_logo.png">
+    </div>
+
+    <mat-card class="login-form">
+      <!--<div class="login-form-app-name">-->
+        <!--<span>{{appName}}</span>-->
+      <!--</div>-->
+
+      <div class="login-form-top">
+        <span>登录</span>
+      </div>
+
+      <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+        <mat-form-field class="login-form-row login-form-input">
+          <input matInput formControlName="username" placeholder="用户名">
+        </mat-form-field>
+
+        <mat-form-field class="login-form-row login-form-input">
+          <input matInput type="password" formControlName="password" placeholder="密码" value="demo123">
+        </mat-form-field>
+
+        <div class="login-form-split-row">
+          <div class="left">
+            <mat-checkbox formControlName="rememberMe">十天内免登录</mat-checkbox>
+          </div>
+          <div class="right">忘记密码？</div>
+        </div>
+
+        <div class="login-form-row">
+          <button mat-raised-button color="primary" [disabled]="!loginForm.valid">登录</button>
+        </div>
+
+        <div class="login-form-bottom">
+          <span>{{copyright}}</span>
+        </div>
+      </form>
+    </mat-card>
+
+  </div>
+</div>

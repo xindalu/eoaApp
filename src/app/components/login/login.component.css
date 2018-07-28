@@ -1,0 +1,61 @@
+.login-body {
+  /*background: url("../../../assets/background.jpg");*/
+  background-image: linear-gradient(to bottom,#2bc0ec,#1b81d7);
+  background-size: cover;
+  height: 100vh;
+}
+
+.login-container {
+  padding-top: 100px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login-form-app-name {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.login-form {
+  background-color: white;
+  margin-top: 50px;
+}
+
+.login-form-top {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.login-form-bottom {
+  padding-top: 30px;
+}
+
+.login-form-row {
+  padding-top: 10px;
+  width: 100%;
+}
+
+.login-form-split-row {
+  display: flex;
+}
+
+.login-form-split-row .left {
+  flex: 1;
+  text-align: left;
+}
+
+.login-form-split-row .right {
+  flex: 1;
+  text-align: right;
+}
+
+.login-form-row-right {
+  text-align: right;
+}
+
+.login-form-input {
+  font-size: 16px;
+}

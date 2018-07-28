@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  appName: 'CSCEC',
+  copyright: '© 2018 CSCEC All Rights Reserved',
+  storagePrefix: 'app_',
+  storageSecret: '398b21fda773a972aabb10f60a62477a',
 };
 
 /*
